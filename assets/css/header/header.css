@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.header .wrapper {
+    width: calc(100% - 120*2px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 162.34px;
+    height: 50.27px;
+    position: relative;
+    transform: translate(0,1px);
+}
+
+.header--right {
+    display: flex;
+    align-items: center;
+    gap: 177.82px;
+    transition: all 0.2s linear;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    height: 32px;
+}
+
+.nav__link {
+    display: grid;
+    width: 121px;
+    height: 32px;
+}
+
+.nav__link a {
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transform: translate(-2px, 0);
+    color: #000000;
+
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.header__searchbox {
+    position: relative;
+    transform: translateX(-1px);
+    display: flex;
+    height: 28px;
+    width: 103px;
+    border: 2px solid black;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+}
+.header__searchbox * {
+    height: 100%;
+}
+
+.searchbox__input {
+    color: transparent;
+    border: none;
+    width: 55px;
+    border-radius: 50px 0 0 50px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    text-align: left;
+    color: #000000;
+    padding: 0.5px 0 0 12px;
+    outline: none;
+    transition: all 0s linear;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: transparent;
+}
+.header__input:focus-within .searchbox__input::placeholder {
+    color: #FFFFFF;
+
+}
+.searchbox__input::placeholder {
+    color: #000000;
+}
+
+.searchbox__button {
+    position: absolute;
+    right: 0px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.searchbox__img {
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.header__login {
+    position: relative;
+    transform: translate(-1.5px, -3px);
+    border: none;
+    background-color: transparent;
+    width: 38.54px;
+    height: 38.21px;
+}
+
+.login__img {
+    width: 100%;
+    height: 100%;
+}
