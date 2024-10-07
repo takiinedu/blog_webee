@@ -86,7 +86,7 @@
     border-radius: 50px;
     transition: all 0.2s linear;
 }
-.header__searchbox:hover .searchbox__input::placeholder{
+.searchbox__input:hover .searchbox__input::placeholder{
     color: #FFFFFF;
 }
 .header__searchbox * {
