@@ -25,6 +25,11 @@ document.querySelector('header').innerHTML = `
                 </div>
             </div>
         </div>
+        <style>
+            .searchbox__input::placeholder {
+            color: var(--placeholder-color, black);
+            }
+        </style>
   `
 
 
@@ -66,7 +71,12 @@ searchbox__input.addEventListener('mouseleave', function () {
         setTimeout(() => {
             console.log("run")
             document.querySelector(".header__searchbox").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
+            searchbox__input.style.setProperty('--placeholder-color', 'black');
+
         }, 1);
+    }
+    if(value == "" && focus == true){
+        searchbox__input.style.setProperty('--placeholder-color', 'white');
     }
 });
 
@@ -102,6 +112,7 @@ searchbox__input.addEventListener('blur', function () {
         setTimeout(() => {
             console.log("run")
             document.querySelector(".header__searchbox").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
+            searchbox__input.style.setProperty('--placeholder-color', 'black');
         }, 1);
     }
 });
