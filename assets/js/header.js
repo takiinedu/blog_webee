@@ -105,22 +105,3 @@ searchbox__input.addEventListener('blur', function () {
         }, 1);
     }
 });
-// navbar animation
-const link1 = document.querySelector("#link1")
-link1.addEventListener('mouseenter', () => {
-    let a = link1.querySelector('a');
-    a.style.color = "#FE7F00"
-    setTimeout(() => {
-        a.style.transition = "0.5s"
-        a.style.top = "3px"
-    }, 1);
-    setTimeout(() => {
-        a.style.transition = "0s"
-    }, 500);
-});
-
-link1.addEventListener('mouseleave', () => {
-    let a = link1.querySelector('a');
-    a.style.color = "black"
-    a.style.top = "0px"
-});
