@@ -41,7 +41,7 @@ let focus = false;
 const heaeder__right = document.querySelector(".header--right")
 const searchbox__input = document.querySelector(".searchbox__input")
 const header__searchbox = document.querySelector(".header__searchbox")
-header__searchbox.addEventListener('mouseenter', function () {
+searchbox__input.addEventListener('mouseenter', function () {
     header__searchbox.style.background = "linear-gradient(to right, #FE7F00 10%,#C4000C 90%)"
     header__searchbox.style.width = "246px"
     searchbox__input.style.width = "100%"
@@ -52,7 +52,7 @@ header__searchbox.addEventListener('mouseenter', function () {
     searchbox__input.style.color = "white"
     searchbox__input.style.left = "0px";
 });
-header__searchbox.addEventListener('mouseleave', function () {
+searchbox__input.addEventListener('mouseleave', function () {
     let value = document.querySelector(".searchbox__input").value
     if (value == "" && focus == false) {
         header__searchbox.style.width = "103px"
