@@ -54,7 +54,7 @@ header__searchbox.addEventListener('mouseenter', function () {
 });
 header__searchbox.addEventListener('mouseleave', function () {
     let value = document.querySelector(".searchbox__input").value
-    if (value == "") {
+    if (value == "" && focus == false) {
         header__searchbox.style.width = "103px"
         searchbox__input.style.width = "100%"
         searchbox__input.style.paddingLeft = "33px";
