@@ -4,6 +4,10 @@
 *{
     margin: 0;
     padding: 0;
+    pointer-events: auto; /* Vẫn cho phép tương tác với con trỏ */
+    user-drag: none; /* Chặn kéo ảnh trên trình duyệt WebKit (Chrome, Safari, v.v.) */
+    -webkit-user-drag: none; /* Chặn kéo ảnh trên trình duyệt WebKit */
+    user-select: none;
 }
 body{
     width: 100%;
@@ -12,7 +16,6 @@ body{
 }
 content{
     position: relative;
-    top: 64px;
 }
 /* Custom scrollbar width */
 ::-webkit-scrollbar {

@@ -2,7 +2,7 @@
 document.querySelector('header').innerHTML = `
             <div class="wrapper">
             <div class="header--left">
-                <img class="header--logo logo" src="assets/img/header/Logo.png" alt="Website Logo">
+                <img class="header--logo logo" onclick ="document.location.href = 'index.html'" src="assets/img/header/Logo.png" alt="Website Logo">
             </div>
             <div class="header--right">
                 <ul class="header__nav nav">

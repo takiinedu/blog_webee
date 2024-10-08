@@ -12,7 +12,7 @@
 }
 
 .header .wrapper {
-    width: calc(100% - 120*2px);
+    width: calc(100% - 104*2px);
     display: flex;
     justify-content: space-between;
 }
@@ -70,7 +70,7 @@
 .header__input {
     display: flex;
     align-items: center;
-    gap: 24.04px;
+    gap: 39.1px;
 }
 
 .header__searchbox {
