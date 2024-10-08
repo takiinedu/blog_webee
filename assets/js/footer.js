@@ -28,7 +28,7 @@ footer.innerHTML = `
                     </div>
                 </div>
             </div>
-            <marquee class="footer__copyright" direction = "right" scrollamount = "10">Copyright © 2024 by WeBee Team</marquee>
+            <marquee class="footer__copyright" behavior="alternate" direction = "right" scrollamount = "10">Copyright © 2024 by WeBee Team</marquee>
         </div>
 `
 // link footer.css
