@@ -4,7 +4,7 @@ footer.innerHTML = `
             <div class="wrapper">
                 <div class="logo">
                     <img class="logo__shadow" src="assets/img/footer/LogoBlur.png" alt="">
-                    <img class="logo__main" src="assets/img/footer/logo.png" alt="">
+                    <img class="logo__main" onclick ="document.location.href = 'index.html'" src="assets/img/footer/logo.png" alt="">
                 </div>
                 <div class="footer__buttons">
                     <div class="buttons--top">
